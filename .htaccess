@@ -2,14 +2,10 @@
 DirectoryIndex index.html index.htm index.php /index.html
 ###DIRINDEX###
 
-ErrorDocument 401 https://www.markotop.com/
-ErrorDocument 403 https://www.markotop.com/
-ErrorDocument 404 https://www.markotop.com/
-ErrorDocument 500 https://www.markotop.com/
-
-#Force WWW on everything
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+ErrorDocument 401 https://markotop.com/
+ErrorDocument 403 https://markotop.com/
+ErrorDocument 404 https://markotop.com/
+ErrorDocument 500 https://markotop.com/
 
 # Redirect HTTP to HTTPS
 RewriteEngine On
